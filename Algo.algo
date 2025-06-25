@@ -1,0 +1,24 @@
+ALGORITHM compteur
+VAR(longeur,nombre_mots,nombre_voyelles:nombre)
+
+BEGIN
+
+longueur = 0;
+nbMots = 1;      // On commence par 1, car le premier mot n'a pas un espace
+nbVoyelles = 0
+
+//pour entrer une phrase
+phrase=input("donner une phrase termin par point ")
+
+longueur=len(phrase)
+
+//C nombre de voyelles 
+Voyelles="aeiouAEIOU"
+for caractere in phrase:
+    if caractere in voyelles:
+        nombre_voyelles += 1
+
+
+print(f"Longueur de la phrase : {longueur} caractères")
+print(f"Nombre de voyelles : {nombre_voyelles}")
+END
